@@ -1,5 +1,7 @@
 import React, { useMemo } from 'react';
-import Card, { CardHeader, CardTitle, CardBody } from '../../../components/ui/Card/Card';
+//import Card, { CardHeader, CardTitle, CardBody } from '../../../components/UI/Card/Card';
+import Card, { CardHeader, CardTitle, CardBody } from "../../../components/UI/Card/Card";
+
 import './LeadsAnalytics.css';
 
 const LeadsAnalytics = ({ leads = [] }) => {

@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Spinner from '../../components/Spinner/Spinner';
-import Card, { CardHeader, CardTitle, CardBody } from '../../components/ui/Card/Card';
-import Button from '../../components/ui/Button/Button';
-import Input from '../../components/ui/Input/Input';
-import Select from '../../components/ui/Select/Select';
+import Card, { CardHeader, CardTitle, CardBody } from '../../components/UI/Card/Card';
+import Button from '../../components/UI/Button/Button';
+import Input from '../../components/UI/Input/Input';
+import Select from '../../components/UI/Select/Select';
 import { useToast } from '../../context/ToastContext';
 import './LeadForm.css';
 

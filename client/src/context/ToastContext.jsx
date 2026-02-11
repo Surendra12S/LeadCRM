@@ -1,10 +1,11 @@
 import React, { createContext, useContext, useState, useCallback } from 'react';
-import Toast from '../components/ui/Toast/Toast';
+import Toast from '../components/UI/Toast/Toast.jsx';
 
 const ToastContext = createContext();
 
 export const useToast = () => {
     const context = useContext(ToastContext);
+    console.trace("useToast called from:");
     if (!context) {
         throw new Error('useToast must be used within a ToastProvider');
     }
