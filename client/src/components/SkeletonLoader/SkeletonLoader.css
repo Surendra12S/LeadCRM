@@ -1,0 +1,38 @@
+/* SkeletonLoader.css */
+
+.skeleton-wrapper {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.skeleton-row {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.skeleton-block {
+    background: #e2e8f0;
+    height: 1.25rem;
+    border-radius: 0.25rem;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.dark .skeleton-block {
+    background: #334155;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.6;
+    }
+}

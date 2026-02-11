@@ -1,0 +1,261 @@
+/* LeadsList.css */
+
+.leads-container {
+    padding-bottom: 2rem;
+}
+
+.leads-card {
+    border: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.leads-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.leads-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.leads-count-badge {
+    margin-left: 0.5rem;
+}
+
+/* Controls */
+.leads-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.search-container {
+    flex: 2;
+    min-width: 250px;
+}
+
+.filter-container {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Table */
+.table-container {
+    overflow-x: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.leads-table-header {
+    padding: 1rem;
+    text-align: left;
+    background-color: var(--surface-color);
+    color: var(--text-secondary);
+    font-weight: 600;
+    border-bottom: 2px solid var(--border-color);
+    white-space: nowrap;
+}
+
+.sortable-header {
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+
+.sortable-header:hover {
+    background-color: var(--hover-bg);
+    color: var(--text-primary);
+}
+
+.sort-icon {
+    display: inline-block;
+    margin-left: 0.25rem;
+    font-size: 0.8rem;
+    width: 1em;
+}
+
+.lead-row {
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.lead-row:last-child {
+    border-bottom: none;
+}
+
+.lead-row:hover {
+    background-color: var(--hover-bg);
+}
+
+.table td {
+    padding: 1rem;
+    vertical-align: middle;
+    color: var(--text-primary);
+}
+
+.lead-name {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.lead-phone {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+}
+
+.lead-email-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lead-email {
+    color: var(--text-primary);
+}
+
+.copy-btn {
+    opacity: 0;
+    padding: 0.25rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text-secondary);
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.lead-row:hover .copy-btn {
+    opacity: 1;
+}
+
+.copy-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--primary-color);
+}
+
+.lead-company {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+}
+
+.date-cell {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--surface-color);
+    border: 1px dashed var(--border-color);
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+}
+
+.empty-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.empty-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.empty-description {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Modal Details */
+.lead-details {
+    padding: 1rem 0;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.detail-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.detail-value {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.message-box {
+    background-color: var(--hover-bg);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: var(--text-primary);
+    line-height: 1.5;
+    white-space: pre-wrap;
+    border: 1px solid var(--border-color);
+}
+
+.detail-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-align: right;
+    font-family: monospace;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .leads-controls {
+        flex-direction: column;
+    }
+
+    .detail-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .leads-table-header:nth-child(4),
+    .date-cell {
+        display: none;
+        /* Hide date on mobile */
+    }
+}

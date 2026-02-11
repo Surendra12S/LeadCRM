@@ -1,0 +1,175 @@
+.error-message {
+    text-align: center;
+    color: var(--error-color);
+    margin-top: 2rem;
+}
+
+.leads-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.leads-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.leads-count-badge {
+    background-color: var(--hover-bg);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.leads-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.search-container {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filter-container {
+    width: 200px;
+}
+
+.search-input,
+.source-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+}
+
+.search-input:focus,
+.source-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-secondary);
+}
+
+/* Table Styles Override/Extension */
+.leads-table-header {
+    background-color: var(--hover-bg);
+    color: var(--text-primary);
+    border-bottom-color: var(--border-color);
+    text-align: left;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+}
+
+.lead-row {
+    cursor: pointer;
+    transition: background-color 0.1s;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.lead-row:hover {
+    background-color: var(--hover-bg);
+}
+
+.lead-name {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.lead-email {
+    color: var(--text-primary);
+}
+
+.source-badge {
+    display: inline-block;
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    background-color: rgba(79, 70, 229, 0.1);
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.date-cell {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.view-btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    background: transparent;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.view-btn:hover {
+    background-color: var(--hover-bg);
+}
+
+/* Modal Details Styles */
+.detail-group {
+    margin-bottom: 1rem;
+}
+
+.detail-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.detail-value {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.detail-value-sm {
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.message-box {
+    background-color: var(--hover-bg);
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    border: 1px solid var(--border-color);
+    min-height: 60px;
+    color: var(--text-primary);
+    white-space: pre-wrap;
+}
+
+.detail-footer {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+}

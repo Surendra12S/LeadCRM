@@ -1,0 +1,81 @@
+/* LeadsAnalytics.css */
+
+.analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.chart-container {
+    padding: 1rem 0;
+    display: flex;
+    align-items: flex-end;
+    height: 150px;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    /* Space for labels */
+}
+
+.chart-bar-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.chart-bar {
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 4px 4px 0 0;
+    transition: height 0.5s ease-out;
+    min-height: 4px;
+    opacity: 0.8;
+}
+
+.chart-bar:hover {
+    opacity: 1;
+}
+
+.bar-label {
+    position: absolute;
+    bottom: -25px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bar-value {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}
+
+.analytics-stat-card {
+    background: var(--surface-color);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
