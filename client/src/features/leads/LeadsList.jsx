@@ -31,7 +31,7 @@ const LeadsList = () => {
     useEffect(() => {
         const fetchLeads = async () => {
             try {
-                const res = await axios.get('/api/leads');
+                const res = await axios.get(`${import.meta.env.VITE_API_URL}/leads`);
                 console.log('API Response:', res.data);
 
                 const leadsData = res.data.data || [];

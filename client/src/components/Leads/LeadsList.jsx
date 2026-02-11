@@ -15,7 +15,7 @@ const LeadsList = () => {
 
     const fetchLeads = async () => {
         try {
-            const res = await axios.get('/api/leads');
+            const res = await axios.get(`${import.meta.env.VITE_API_URL}/leads`);
             setLeads(res.data.data);
             setLoading(false);
         } catch (err) {

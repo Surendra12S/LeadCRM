@@ -36,7 +36,7 @@ const LeadForm = () => {
         }
 
         try {
-            const res = await axios.post('/api/leads', formData);
+            const res = await axios.post(`${import.meta.env.VITE_API_URL}/leads`, formData);
             setLoading(false);
             setSuccess(true);
 
