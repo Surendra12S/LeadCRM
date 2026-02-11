@@ -41,7 +41,7 @@ const LeadForm = () => {
         }
 
         try {
-            await axios.post('/api/leads', formData);
+            await axios.post(`${import.meta.env.VITE_API_URL}/leads`, formData);
             setLoading(false);
             addToast('Lead created successfully', 'success');
 
